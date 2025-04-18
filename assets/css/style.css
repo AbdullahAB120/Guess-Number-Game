@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+}  
+
+
+
+#main {
+	height: 100vh;
+	background: #d4d5ff;
+}
+
+
+#container {
+	min-width: 45%;
+}
+
+
+#guess, #gameOver {
+	width: 90%;
+}
+
+#guess:focus {
+	outline: none;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	#container {
+		width: 90%;
+	}
+  
+	#guess, #gameOver {
+		width: 95%;
+	}
+}

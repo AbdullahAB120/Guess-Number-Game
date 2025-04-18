@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title> Guess Number Game </title>
+	
+	<!-- Default CSS -->
+	<link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="all" />
+	
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+</head>
+<body>
+	
+	<div id="main" class="d-flex justify-content-center align-items-center bg-info fw-bold">
+		<div id="container" class="bg-light text-dark font-monospace p-3 py-5 p-md-5 rounded-4">
+			
+			<h1 class="mb-3 fw-bold"> Guess Number Game </h1>
+
+			<form id="form">
+				<input class="d-block mx-auto my-3 p-2 p-md-3 border-dark border-3" type="number" name="guess" id="guess" min="1" required />
+				<button class="btn btn-dark" type="submit"> Submit </button>
+			</form>
+
+			<button class="d-none mx-auto my-3 p-4 p-md-5 border-dark border-3" id="gameOver"></button>
+
+			<div id="result" class="mt-5">
+				<p id="resultMsg" class="mb-0"></p>
+
+				<p id="currectNumber"></p>
+
+				<span id="remain" class="d-block">  </span>
+
+				<button id="won" class="bg-success px-3 py-2 mt-3 text-light border-0 rounded"> Won : 0 </button>
+				<button id="lose" class="bg-danger px-3 py-2 mt-3 text-light border-0 rounded"> Lose : 0 </button>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	<!-- JQuery JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<!-- Default JS -->
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
